@@ -1,0 +1,5 @@
+Time_Period,Orders,Avg_Delivery,Avg_Total,Delayed_Orders,Delay_Rate_%
+Afternoon,75,35.23,54.02,19,25.0
+Evening,63,32.21,52.24,18,29.0
+Morning,37,31.16,49.58,4,11.0
+Night,25,33.47,52.15,9,36.0

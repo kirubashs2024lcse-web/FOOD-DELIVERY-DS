@@ -1,0 +1,4 @@
+Traffic,Orders,Avg_Delivery,Avg_Total,Delay_Rate_%
+High,48,39.39,57.69,38.0
+Low,64,29.22,48.92,12.0
+Medium,88,32.95,52.05,27.0

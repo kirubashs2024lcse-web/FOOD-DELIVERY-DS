@@ -1,0 +1,5 @@
+Weather,Orders,Avg_Delivery,Avg_Total,Delay_Rate_%
+Clear,99,31.38,50.93,20.0
+Cloudy,46,32.88,52.02,22.0
+Rain,47,37.0,55.09,34.0
+Storm,8,37.88,57.16,50.0

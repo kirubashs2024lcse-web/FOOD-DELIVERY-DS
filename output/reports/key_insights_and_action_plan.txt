@@ -1,0 +1,71 @@
+
+=============================================================
+  KEY INSIGHTS
+=============================================================
+
+Insight 1:
+  Finding: Delay threshold is 59.7 minutes (75th percentile of Total_Time).
+  Evidence: 50 out of 200 orders (25.0%) are classified as delayed.
+  Operational meaning: 1 in 4 orders exceeds the acceptable operational time window.
+
+Insight 2:
+  Finding: Biryani House has the highest delay rate among all restaurants.
+  Evidence: Delay Rate = 44.0%,
+            Avg Prep = 25.83 min,
+            Avg Delivery = 31.37 min.
+  Operational meaning: This restaurant requires immediate kitchen and dispatch review.
+
+Insight 3:
+  Finding: Tech Park area has the highest delay rate.
+  Evidence: Delay Rate = 44.0%,
+            Avg Total Time = 59.41 min.
+  Operational meaning: Delivery zone planning and rider allocation need review for this area.
+
+Insight 4:
+  Finding: High traffic has the longest average delivery time.
+  Evidence: Avg Delivery Time = 39.39 min.
+  Operational meaning: Additional rider capacity should be pre-positioned during high-traffic periods.
+
+Insight 5:
+  Finding: Storm weather is associated with the longest average delivery time.
+  Evidence: Avg Delivery Time = 37.88 min.
+  Operational meaning: Operational planning should account for adverse weather conditions.
+
+Insight 6:
+  Finding: Peak hour orders show a delay rate of 38.0% vs 13.0% for non-peak.
+  Evidence: See peak_hour_analysis.csv in output/results.
+  Operational meaning: Staffing and rider pre-positioning during peak hours can reduce delays.
+
+Insight 7:
+  Finding: Distance correlation with Delivery_Time is 0.631 — moderate, not dominant.
+  Evidence: Random Forest top feature = 'Distance_KM', suggesting other factors matter more.
+  Operational meaning: Distance alone does not explain delays; traffic, prep time, and area
+                       are equally or more important predictive factors.
+
+=============================================================
+  PRACTICAL ACTION PLAN
+=============================================================
+
+Restaurant Operations:
+  - Monitor kitchen preparation time for Biryani House — consider staffing review.
+  - Set internal SLA alerts when Preparation_Time exceeds 19 minutes.
+  - Increase kitchen staff during peak hours at high-delay restaurants.
+
+Delivery Operations:
+  - Review delivery routes for Tech Park area.
+  - Assign experienced riders to long-distance or high-traffic zones.
+  - Track rider-level delay rates monthly (use rider_analysis.csv).
+
+Traffic Management:
+  - Pre-position additional riders during High traffic periods.
+  - Use route optimization tools to avoid congested zones.
+
+Peak-Hour Management:
+  - Increase rider availability during peak hours.
+  - Notify customers of expected longer wait times during peak periods.
+
+Weather Management:
+  - During Storm/Rain conditions, proactively adjust estimated delivery times.
+  - Consider weather-based dynamic staffing.
+
+=============================================================
